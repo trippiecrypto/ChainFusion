@@ -1,0 +1,26 @@
+# ChainFusion.py
+
+class ChainFusion:
+    def __init__(self, platform_name, fusion_features):
+        self.platform_name = platform_name
+        self.fusion_features = fusion_features
+    
+    def display_platform_info(self):
+        print(f"Platform Name: {self.platform_name}")
+        print("Fusion Features:")
+        for feature in self.fusion_features:
+            print(f"- {feature}")
+
+# Example usage
+if __name__ == "__main__":
+    platform_name = "ChainFusion"
+    fusion_features = [
+        "Blockchain interoperability solutions",
+        "Cross-chain asset transfers",
+        "Smart contract compatibility across chains",
+        "Integration with major blockchain networks",
+        "Atomic swaps and decentralized exchanges (DEX)"
+    ]
+    
+    chain_fusion = ChainFusion(platform_name, fusion_features)
+    chain_fusion.display_platform_info()
